@@ -15,11 +15,11 @@ public class Competidor {
     private String equipo;
     
     
-    public Competidor(int edad, int id, String categoria, String equipo){
-        this.edad = edad;
-        this.id = id;
-        this.categoria = categoria;
-        this.equipo = categoria;
+    public Competidor(int edadp, int idp, String categoriap, String equipop){
+        this.edad = edadp;
+        this.id = idp;
+        this.categoria = categoriap;
+        this.equipo = categoriap;
     }
     
     public int getId(){
@@ -36,5 +36,21 @@ public class Competidor {
     
     public String getEquipo(){
         return this.equipo;
+    }
+    
+    public void setId(int id){
+        this.id = id;
+    }
+    
+    public void setEdad(int edad){
+        this.edad = edad;
+    }
+    
+    public void setCategoria(String categoria){
+        this.categoria = categoria;
+    }
+    
+    public void setEquipo(String equipo){
+        this.equipo = equipo;
     }
 }
