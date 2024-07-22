@@ -53,12 +53,10 @@ public class Simulacion {
     
     public void generarCompetencias(){
         String[] nombres = {"Gran Premio Mangos", "Gran Premio Hato", "Gran Premio Chuchecas", "Gran Premio Ganaderos", "Gran Premio Pampa" };
-        Random rand = new Random();
-        for (String nombre : nombres) {
-            int kilometros = rand.nextInt(21)+30;
-            
-            Competencia competencia = new Competencia(kilometros, nombre);
-            this.competencias[contador] = competencia;
+       
+        for (String nombre : nombres) { 
+            Competencia competencia = new Competencia(nombre);
+            this.competencias[contador++] = competencia;
         }
     }
     
@@ -69,12 +67,13 @@ public class Simulacion {
         }
     }
     
+    // buscar otras formas
     public void mostrarResultadosCompetencia(Competencia competencia){
         System.out.println("Resultados de " + competencia.getNombre() + ":");
         Competidor[] competidores = competencia.getCompetidor();
         
         //Ordenar los competidores por tiempo total
-        Arrays.sort(competidores, 0,competencia.getKilometros(), Comparator.comparingInt(Competidor::getTiempoTotal));
+        Arrays.sort(competidores,Comparator.comparingInt(Competidor::getTiempoTotal)); // revisar esta linea de codigo
         for (Competidor competidor : competidores) {
             if(competidor != null){
                 System.out.println("ID: " + competidor.getId() + ", Tiempo Total: " + competidor.getTiempoTotal() + " segundos, Equipo: " + "//aqui va el equipo");
