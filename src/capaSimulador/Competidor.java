@@ -20,6 +20,8 @@ public class Competidor {
         this.edad = edad;
         this.id = id;
         this.tiempoTotal = 0;
+        asignarCategoriaSegunEdad();
+        asignarEquipoSegunEdad();
     }
     
     public int getId(){
@@ -47,5 +49,31 @@ public class Competidor {
     
     public void setTiempoTotal(int tiempoTotal){
         this.tiempoTotal = tiempoTotal;
+    }
+    
+    public void asignarCategoriaSegunEdad() {
+        if (this.edad >= 18 && this.edad <= 25) {
+            this.categoria = ECategoriaCompetidor.JUVENIL;
+        } else if (this.edad >= 26 && this.edad <= 35) {
+            this.categoria = ECategoriaCompetidor.ADULTO;
+        } else if (this.edad >= 36 && this.edad <= 45) {
+            this.categoria = ECategoriaCompetidor.ADULTO_MAYOR;
+        } else if (this.edad >= 46 && this.edad <= 55) {
+            this.categoria = ECategoriaCompetidor.VETERANO;
+        } else {
+            this.categoria = ECategoriaCompetidor.ORO;
+        }
+    }
+    
+    public void asignarEquipoSegunEdad(){
+        if (this.edad >= 18 && this.edad <= 20) {
+            this.equipo = EAsignarEquipos.Rapidos_Furiosos;
+        } else if (this.edad >= 21 && this.edad <= 30) {
+            this.equipo = EAsignarEquipos.Velocidad_Total;
+        } else if (this.edad >= 31 && this.edad <= 50) {
+            this.equipo = EAsignarEquipos.Prudencia;
+        } else {
+            this.equipo = EAsignarEquipos.Velocidad_Total;
+        }
     }
 }
