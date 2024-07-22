@@ -11,15 +11,15 @@ package capaSimulador;
 public class Competidor {
     private int edad;
     private int id;
-    private String categoria;
-    private String equipo;
+    private ECategoriaCompetidor categoria;
+    private EAsignarEquipos equipo;
+    private int tiempoTotal;
     
     
-    public Competidor(int edadp, int idp, String categoriap, String equipop){
-        this.edad = edadp;
-        this.id = idp;
-        this.categoria = categoriap;
-        this.equipo = categoriap;
+    public Competidor(int edad, int id){
+        this.edad = edad;
+        this.id = id;
+        this.tiempoTotal = 0;
     }
     
     public int getId(){
@@ -30,12 +30,10 @@ public class Competidor {
         return this.edad;
     }
     
-    public String getCategoria(){
-        return this.categoria;
-    }
+
     
-    public String getEquipo(){
-        return this.equipo;
+    public int getTiempoTotal(){
+        return this.tiempoTotal;
     }
     
     public void setId(int id){
@@ -46,11 +44,8 @@ public class Competidor {
         this.edad = edad;
     }
     
-    public void setCategoria(String categoria){
-        this.categoria = categoria;
-    }
     
-    public void setEquipo(String equipo){
-        this.equipo = equipo;
+    public void setTiempoTotal(int tiempoTotal){
+        this.tiempoTotal = tiempoTotal;
     }
 }

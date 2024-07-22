@@ -4,6 +4,8 @@
  */
 package capaSimulador;
 
+import java.util.Random;
+
 /**
  *
  * @author araya
@@ -12,34 +14,46 @@ public class Competencia {
     private int kilometros;
     private int vueltas;
     private String nombre;
+    private Competidor[] competidores;
+    private static final int MAX_COMPETIDOR = 50;
     
-    public Competencia(int kilometrosp, int vueltasp, String nombrep){
-        this.kilometros = kilometrosp;
-        this.vueltas = vueltasp;
-        this.nombre = nombrep;
+    public Competencia(int kilometros,String nombre){
+        this.kilometros = kilometros;
+        this.nombre = nombre;
+        this.competidores = new Competidor[50];
     }
     
     public int getKilometros(){
         return this.kilometros;
     }
     
-    public int getVueltas(){
-        return this.vueltas;
-    }
+    
     
     public String getNombre(){
         return this.nombre;
     }
     
-    public void setKilometros(int kilometros){
-        this.kilometros = kilometros;
+    
+    public Competidor[] getCompetidor(){
+        return competidores;
     }
     
-    public void setVueltas(int vueltas){
-        this.vueltas = vueltas;
+    public void setCompetidor(Competidor[] nuevoCompetidor){
+        this.competidores = nuevoCompetidor;
     }
     
-    public void setNombre(String nombre){
-        this.nombre = nombre;
+    public void agregarCompetidor(Competidor competidor){ 
+        int indice = 0;
+        if(indice < competidores.length){
+            competidores[indice++] = competidor;
+        }
+    }
+    
+    public void generarTiempos(){
+        Random rand = new Random();
+        for(Competidor competidor : competidores){
+            int tiempo = rand.nextInt(3000,6000);
+            competidor.setTiempoTotal(competidor.getTiempoTotal() + tiempo);
+        }
     }
 }
