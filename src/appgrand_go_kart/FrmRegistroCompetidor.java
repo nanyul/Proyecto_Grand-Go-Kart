@@ -26,57 +26,144 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblRegistrar = new javax.swing.JLabel();
+        btnRegistrar = new javax.swing.JButton();
+        lblReiniciar = new javax.swing.JLabel();
+        btnReiniciar = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        listCompetidores = new javax.swing.JList<>();
+        jLabel3 = new javax.swing.JLabel();
+        btnOrdenarIDAsc = new javax.swing.JButton();
+        btnOrdenarIDDesc = new javax.swing.JButton();
+        btnOrdenarEdadAsc = new javax.swing.JButton();
+        btnOrdenarEdadDesc = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
+
+        lblRegistrar.setText("Registrar Competidores :");
+
+        btnRegistrar.setText("Registrar");
+
+        lblReiniciar.setText("Reiniciar Simulador : ");
+
+        btnReiniciar.setText("Reiniciar");
+        btnReiniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReiniciarActionPerformed(evt);
+            }
+        });
+
+        jScrollPane1.setViewportView(listCompetidores);
+
+        btnOrdenarIDAsc.setText("Ordenar por ID ( ⬆ )");
+
+        btnOrdenarIDDesc.setText("Ordenar por ID ( ⬇ )");
+        btnOrdenarIDDesc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOrdenarIDDescActionPerformed(evt);
+            }
+        });
+
+        btnOrdenarEdadAsc.setText("Ordenar por edad ( ⬆ )");
+
+        btnOrdenarEdadDesc.setText("Ordenar por edad ( ⬇ )");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 430, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(lblRegistrar)
+                .addGap(18, 18, 18)
+                .addComponent(btnRegistrar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblReiniciar)
+                .addGap(18, 18, 18)
+                .addComponent(btnReiniciar)
+                .addGap(108, 108, 108))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(223, 223, 223)
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(btnOrdenarIDAsc)
+                        .addGap(29, 29, 29)
+                        .addComponent(btnOrdenarIDDesc))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(btnOrdenarEdadAsc)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnOrdenarEdadDesc)))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblRegistrar)
+                    .addComponent(btnRegistrar)
+                    .addComponent(lblReiniciar)
+                    .addComponent(btnReiniciar))
+                .addGap(109, 109, 109)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnOrdenarIDAsc)
+                            .addComponent(btnOrdenarIDDesc))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnOrdenarEdadAsc)
+                            .addComponent(btnOrdenarEdadDesc))))
+                .addContainerGap(428, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmRegistroCompetidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmRegistroCompetidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmRegistroCompetidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmRegistroCompetidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReiniciarActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FrmRegistroCompetidor().setVisible(true);
-            }
-        });
-    }
+    private void btnOrdenarIDDescActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenarIDDescActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnOrdenarIDDescActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        btnReiniciar.setEnabled(false);
+        btnOrdenarIDDesc.setEnabled(false);
+        btnOrdenarIDAsc.setEnabled(false);
+        btnOrdenarEdadAsc.setEnabled(false);
+        btnOrdenarEdadDesc.setEnabled(false);
+    }//GEN-LAST:event_formWindowOpened
+
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnOrdenarEdadAsc;
+    private javax.swing.JButton btnOrdenarEdadDesc;
+    private javax.swing.JButton btnOrdenarIDAsc;
+    private javax.swing.JButton btnOrdenarIDDesc;
+    private javax.swing.JButton btnRegistrar;
+    private javax.swing.JButton btnReiniciar;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblRegistrar;
+    private javax.swing.JLabel lblReiniciar;
+    private javax.swing.JList<String> listCompetidores;
     // End of variables declaration//GEN-END:variables
 }
