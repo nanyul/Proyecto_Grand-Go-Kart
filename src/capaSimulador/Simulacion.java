@@ -63,7 +63,7 @@ public class Simulacion {
         }
     }
     
-    // buscar otras formas
+    //Muestra los resultados de los competidores y los ordena por su tiempo
     public void mostrarResultadosCompetencia(Competencia competencia){
         System.out.println("Resultados de " + competencia.getNombre() + ":");
         Competidor[] competidores = competencia.getCompetidor();
@@ -72,7 +72,7 @@ public class Simulacion {
         Arrays.sort(competidores,Comparator.comparingInt(Competidor::getTiempoTotal)); 
         for (Competidor competidor : competidores) {
             if(competidor != null){
-                System.out.println("ID: " + competidor.getId() + ", Tiempo Total: " + competidor.getTiempoTotal() + " segundos, Equipo: " + "//aqui va el equipo");
+                System.out.println("ID: " + competidor.getId() + ", Tiempo Total: " + competidor.getTiempoTotal() + " segundos, Equipo: " + competidor.asignarEquipoSegunEdad());
             }
         }
         System.out.println();
