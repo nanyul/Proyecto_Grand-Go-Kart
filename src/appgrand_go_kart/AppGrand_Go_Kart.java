@@ -15,6 +15,10 @@ public class AppGrand_Go_Kart {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        FrmRegistroCompetidor ventana = new FrmRegistroCompetidor();
+        ventana.setLocationRelativeTo(null);
+        ventana.setVisible(true);
     }
+    
     
 }

@@ -3,13 +3,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package appgrand_go_kart;
+ import capaSimulador.Competidor;
+ import capaSimulador.Competencia;
 
+        
 /**
  *
  * @author araya
  */
 public class FrmRegistroCompetidor extends javax.swing.JFrame {
-
+    private Competidor oCompetidor;
+    private Competencia oCompetencia;
     /**
      * Creates new form FrmRegistroCompetidor
      */
@@ -48,6 +52,11 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
         lblRegistrar.setText("Registrar Competidores :");
 
         btnRegistrar.setText("Registrar");
+        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistrarActionPerformed(evt);
+            }
+        });
 
         lblReiniciar.setText("Reiniciar Simulador : ");
 
@@ -129,8 +138,8 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnOrdenarEdadAsc)
                             .addComponent(btnOrdenarEdadDesc)))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(422, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         pack();
@@ -152,6 +161,17 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
         btnOrdenarEdadAsc.setEnabled(false);
         btnOrdenarEdadDesc.setEnabled(false);
     }//GEN-LAST:event_formWindowOpened
+
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
+        // TODO add your handling code here:
+        
+        
+        btnReiniciar.setEnabled(true);
+        btnOrdenarIDDesc.setEnabled(true);
+        btnOrdenarIDAsc.setEnabled(true);
+        btnOrdenarEdadAsc.setEnabled(true);
+        btnOrdenarEdadDesc.setEnabled(true);
+    }//GEN-LAST:event_btnRegistrarActionPerformed
 
     
 
