@@ -51,6 +51,7 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
 
         lblRegistrar.setText("Registrar Competidores :");
 
+        btnRegistrar.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnRegistrar.setText("Registrar");
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,6 +61,7 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
 
         lblReiniciar.setText("Reiniciar Simulador : ");
 
+        btnReiniciar.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnReiniciar.setText("Reiniciar");
         btnReiniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,6 +69,8 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
             }
         });
 
+        listCompetidores.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Lista de Competidores", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Rockwell", 0, 14), new java.awt.Color(0, 0, 0))); // NOI18N
+        listCompetidores.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         jScrollPane1.setViewportView(listCompetidores);
 
         btnOrdenarIDAsc.setText("Ordenar por ID ( ⬆ )");
@@ -139,7 +143,7 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
                             .addComponent(btnOrdenarEdadAsc)
                             .addComponent(btnOrdenarEdadDesc)))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         pack();
