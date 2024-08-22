@@ -77,47 +77,59 @@ public class FrmGeneraCompetencia extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Sylfaen", 1, 14)); // NOI18N
         jLabel1.setText("Competencia en curso :");
 
         jScrollPane1.setBorder(javax.swing.BorderFactory.createTitledBorder("Clasificacion Competencia"));
 
         txaCompetencia.setEditable(false);
         txaCompetencia.setColumns(20);
+        txaCompetencia.setLineWrap(true);
         txaCompetencia.setRows(5);
         jScrollPane1.setViewportView(txaCompetencia);
 
         txaGeneral.setEditable(false);
         txaGeneral.setColumns(20);
         txaGeneral.setRows(5);
-        txaGeneral.setBorder(javax.swing.BorderFactory.createTitledBorder("Clasificacion General"));
+        txaGeneral.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Clasificación General", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Sylfaen", 1, 14))); // NOI18N
         jScrollPane2.setViewportView(txaGeneral);
+        txaGeneral.getAccessibleContext().setAccessibleName("Clasificación General");
 
         txaCategoria.setEditable(false);
         txaCategoria.setColumns(20);
         txaCategoria.setRows(5);
-        txaCategoria.setBorder(javax.swing.BorderFactory.createTitledBorder(" Clasificacion Categoria"));
+        txaCategoria.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " Clasificación Categoria", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Sylfaen", 1, 14))); // NOI18N
         jScrollPane3.setViewportView(txaCategoria);
 
         txaEquipos.setEditable(false);
         txaEquipos.setColumns(20);
         txaEquipos.setRows(5);
-        txaEquipos.setBorder(javax.swing.BorderFactory.createTitledBorder("Clasificacion Equipos"));
+        txaEquipos.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Clasificación por Equipos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Sylfaen", 1, 14))); // NOI18N
         jScrollPane4.setViewportView(txaEquipos);
 
+        btnVolver.setBackground(java.awt.Color.lightGray);
+        btnVolver.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnVolver.setText("Volver");
+        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver.setFocusable(false);
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVolverActionPerformed(evt);
             }
         });
 
+        cmbCompetencias.setFocusable(false);
         cmbCompetencias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbCompetenciasActionPerformed(evt);
             }
         });
 
+        btnSimular.setBackground(java.awt.Color.lightGray);
+        btnSimular.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnSimular.setText("Simular");
+        btnSimular.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSimular.setFocusable(false);
         btnSimular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSimularActionPerformed(evt);
@@ -140,7 +152,7 @@ public class FrmGeneraCompetencia extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 577, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33)
-                        .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(69, 69, 69)
                         .addComponent(btnSimular)
@@ -170,9 +182,9 @@ public class FrmGeneraCompetencia extends javax.swing.JFrame {
                                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(34, 34, 34)
-                                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(69, 69, 69))
+                .addGap(20, 20, 20))
         );
 
         pack();

@@ -65,47 +65,65 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
             }
         });
 
-        lblRegistrar.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        lblRegistrar.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
         lblRegistrar.setText("Registrar Competidores");
 
+        btnRegistrar.setBackground(java.awt.Color.lightGray);
         btnRegistrar.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnRegistrar.setText("Registrar");
+        btnRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRegistrar.setFocusable(false);
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistrarActionPerformed(evt);
             }
         });
 
+        btnVolver.setBackground(java.awt.Color.lightGray);
         btnVolver.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnVolver.setText("Volver");
+        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver.setFocusable(false);
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVolverActionPerformed(evt);
             }
         });
 
+        btnOrdenarIDAsc.setBackground(java.awt.Color.lightGray);
         btnOrdenarIDAsc.setText("Ordenar por ID ( ⬆ )");
+        btnOrdenarIDAsc.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOrdenarIDAsc.setFocusable(false);
         btnOrdenarIDAsc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOrdenarIDAscActionPerformed(evt);
             }
         });
 
+        btnOrdenarIDDesc.setBackground(java.awt.Color.lightGray);
         btnOrdenarIDDesc.setText("Ordenar por ID ( ⬇ )");
+        btnOrdenarIDDesc.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOrdenarIDDesc.setFocusable(false);
         btnOrdenarIDDesc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOrdenarIDDescActionPerformed(evt);
             }
         });
 
+        btnOrdenarEdadAsc.setBackground(java.awt.Color.lightGray);
         btnOrdenarEdadAsc.setText("Ordenar por edad ( ⬆ )");
+        btnOrdenarEdadAsc.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOrdenarEdadAsc.setFocusable(false);
         btnOrdenarEdadAsc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOrdenarEdadAscActionPerformed(evt);
             }
         });
 
+        btnOrdenarEdadDesc.setBackground(java.awt.Color.lightGray);
         btnOrdenarEdadDesc.setText("Ordenar por edad ( ⬇ )");
+        btnOrdenarEdadDesc.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOrdenarEdadDesc.setFocusable(false);
         btnOrdenarEdadDesc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOrdenarEdadDescActionPerformed(evt);
@@ -113,9 +131,8 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
         });
 
         txaListaCompetidores.setEditable(false);
-        txaListaCompetidores.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txaListaCompetidores.setRows(5);
-        txaListaCompetidores.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Lista Competidres", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Sylfaen", 1, 12))); // NOI18N
+        txaListaCompetidores.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Lista Competidores", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Sylfaen", 1, 14))); // NOI18N
         txaListaCompetidores.setFocusable(false);
         jScrollPane3.setViewportView(txaListaCompetidores);
 
@@ -156,13 +173,12 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(lblRegistrar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(26, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(lblRegistrar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(187, 187, 187)
                         .addComponent(jLabel3)
