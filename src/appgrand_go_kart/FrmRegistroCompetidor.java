@@ -68,7 +68,7 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
         lblRegistrar.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
         lblRegistrar.setText("Registrar Competidores");
 
-        btnRegistrar.setBackground(java.awt.Color.lightGray);
+        btnRegistrar.setBackground(new java.awt.Color(192, 229, 234));
         btnRegistrar.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnRegistrar.setText("Registrar");
         btnRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -79,7 +79,7 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
             }
         });
 
-        btnVolver.setBackground(java.awt.Color.lightGray);
+        btnVolver.setBackground(new java.awt.Color(192, 229, 234));
         btnVolver.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnVolver.setText("Volver");
         btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -90,7 +90,7 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
             }
         });
 
-        btnOrdenarIDAsc.setBackground(java.awt.Color.lightGray);
+        btnOrdenarIDAsc.setBackground(new java.awt.Color(192, 229, 234));
         btnOrdenarIDAsc.setText("Ordenar por ID ( ⬆ )");
         btnOrdenarIDAsc.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOrdenarIDAsc.setFocusable(false);
@@ -100,7 +100,7 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
             }
         });
 
-        btnOrdenarIDDesc.setBackground(java.awt.Color.lightGray);
+        btnOrdenarIDDesc.setBackground(new java.awt.Color(192, 229, 234));
         btnOrdenarIDDesc.setText("Ordenar por ID ( ⬇ )");
         btnOrdenarIDDesc.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOrdenarIDDesc.setFocusable(false);
@@ -110,7 +110,7 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
             }
         });
 
-        btnOrdenarEdadAsc.setBackground(java.awt.Color.lightGray);
+        btnOrdenarEdadAsc.setBackground(new java.awt.Color(192, 229, 234));
         btnOrdenarEdadAsc.setText("Ordenar por edad ( ⬆ )");
         btnOrdenarEdadAsc.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOrdenarEdadAsc.setFocusable(false);
@@ -120,7 +120,7 @@ public class FrmRegistroCompetidor extends javax.swing.JFrame {
             }
         });
 
-        btnOrdenarEdadDesc.setBackground(java.awt.Color.lightGray);
+        btnOrdenarEdadDesc.setBackground(new java.awt.Color(192, 229, 234));
         btnOrdenarEdadDesc.setText("Ordenar por edad ( ⬇ )");
         btnOrdenarEdadDesc.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOrdenarEdadDesc.setFocusable(false);

@@ -98,7 +98,7 @@ public class FrmGeneraCompetencia extends javax.swing.JFrame {
         txaEquipos.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Clasificación por Equipos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Sylfaen", 1, 14))); // NOI18N
         jScrollPane4.setViewportView(txaEquipos);
 
-        btnVolver.setBackground(java.awt.Color.lightGray);
+        btnVolver.setBackground(new java.awt.Color(192, 229, 234));
         btnVolver.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnVolver.setText("Volver");
         btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -116,7 +116,7 @@ public class FrmGeneraCompetencia extends javax.swing.JFrame {
             }
         });
 
-        btnSimular.setBackground(java.awt.Color.lightGray);
+        btnSimular.setBackground(new java.awt.Color(192, 229, 234));
         btnSimular.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnSimular.setText("Simular");
         btnSimular.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));

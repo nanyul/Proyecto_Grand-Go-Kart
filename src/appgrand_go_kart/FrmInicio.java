@@ -48,7 +48,7 @@ public class FrmInicio extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Grand Go-Kart");
 
-        btnRegistro.setBackground(java.awt.Color.lightGray);
+        btnRegistro.setBackground(new java.awt.Color(192, 229, 234));
         btnRegistro.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnRegistro.setText("Registro Competidores");
         btnRegistro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -59,7 +59,7 @@ public class FrmInicio extends javax.swing.JFrame {
             }
         });
 
-        btnIniciar.setBackground(java.awt.Color.lightGray);
+        btnIniciar.setBackground(new java.awt.Color(192, 229, 234));
         btnIniciar.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnIniciar.setText("Iniciar Simulación");
         btnIniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -70,7 +70,7 @@ public class FrmInicio extends javax.swing.JFrame {
             }
         });
 
-        btnSalir.setBackground(java.awt.Color.lightGray);
+        btnSalir.setBackground(new java.awt.Color(192, 229, 234));
         btnSalir.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
         btnSalir.setText("Salir");
         btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
